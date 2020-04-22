@@ -33,7 +33,7 @@ credentials = GoogleCredentials.get_application_default()
 api = discovery.build('ml', 'v1', credentials=credentials)
 project = app_identity.get_application_id()
 model_name = os.getenv('MODEL_NAME', 'babyweight')
-version_name = os.getenv('VERSION_NAME', 'dnn')
+version_name = os.getenv('VERSION_NAME', 'mlp')
 
 
 app = Flask(__name__)
